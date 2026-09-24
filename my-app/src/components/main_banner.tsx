@@ -18,5 +18,6 @@ const styles = {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
+    marginBottom: '2%'
   },
 } as const satisfies Record<string, React.CSSProperties>;
