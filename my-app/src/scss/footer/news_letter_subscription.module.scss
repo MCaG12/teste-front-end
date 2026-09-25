@@ -6,8 +6,9 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1%;
+  box-sizing: border-box; 
 
-  .left-col {
+  .leftCol {
     width: 40%;
   }
 
@@ -15,25 +16,25 @@
     color: #ffffff;
     font-size: 32px;
     font-weight: 700;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0 0 12px 0;
   }
 
   .subtitle {
     color: #c9c3d9;
     font-size: 17px;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.5;
     margin: 0;
   }
 
-  .right-col {
+  .rightCol {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
 
-  .form-row {
+  .formRow {
     display: flex;
     gap: 16px;
   }
@@ -43,7 +44,7 @@
     border-radius: 8px;
     border: none;
     font-size: 17px;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 300px;
     outline: none;
   }
@@ -62,10 +63,10 @@
     white-space: nowrap;
   }
 
-  .checkbox-label {
+  .checkboxLabel {
     color: #ffffff;
     font-size: 15px;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     align-items: center;
     gap: 8px;

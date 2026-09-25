@@ -12,18 +12,18 @@ export default function main_header()
             <div style={styles.topBar}>
 
                 <div style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"5px"}}>
-                    <span>Compra</span>
+                    <span style={styles.regularText}>Compra</span>
                     <span style={styles.highLightText}>100% segura</span>
                 </div>
 
                 <div style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"5px"}}>
                     <span style={styles.highLightText}>Frete grátis</span>
-                    <span>acima de R$ 500</span>
+                    <span style={styles.regularText}>acima de R$ 500</span>
                 </div>
 
                 <div style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"5px"}}>
                     <span style={styles.highLightText}>Parcelas</span>
-                    <span>suas compras!</span>
+                    <span style={styles.regularText}>suas compras!</span>
                 </div>
             </div>
 
@@ -174,6 +174,13 @@ const styles = {
   },
   highLightText: {
     color: "#6141a7",
+    fontFamily: "Poppins, sans-serif",
+    fontWeight: "700",
+    fontSize: "12px",
+    margin: "0 0 2px 0",
+  },
+  regularText: {
+    color: "#979797",
     fontFamily: "Poppins, sans-serif",
     fontWeight: "700",
     fontSize: "12px",

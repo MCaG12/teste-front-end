@@ -8,7 +8,7 @@
   box-sizing: border-box;
   align-items: center;
 
-  .left-col {
+  .leftCol {
     width: 30%;
   }
 
@@ -17,10 +17,10 @@
     align-items: center;
     margin-bottom: 16px;
 
-    &-circle {
+    &Circle {
       background-color: #F7CA11;
       color: #2b2140;
-      font-family: Poppins, sans-serif;
+      font-family: "Poppins", sans-serif;
       font-weight: 700;
       font-size: 20px;
       width: 40px;
@@ -32,9 +32,9 @@
       margin-right: 2px;
     }
 
-    &-text {
+    &Text {
       color: #2b2140;
-      font-family: Poppins, sans-serif;
+      font-family: "Poppins", sans-serif;
       font-weight: 700;
       font-size: 22px;
     }
@@ -43,12 +43,12 @@
   .tagline {
     color: #6b6b6b;
     font-size: 15px;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.5;
     margin: 0 0 16px 0;
   }
 
-  .social-row {
+  .socialRow {
     display: flex;
     gap: 14px;
   }
@@ -62,7 +62,7 @@
   .columns {
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
+    flex: 1; 
     flex-wrap: wrap;
   }
 
@@ -71,9 +71,9 @@
     flex-direction: column;
     gap: 14px;
 
-    &-title {
+    &Title {
       color: #2b2140;
-      font-family: Poppins, sans-serif;
+      font-family: "Poppins", sans-serif;
       font-weight: 700;
       font-size: 16px;
       margin: 0 0 4px 0;
@@ -82,8 +82,12 @@
 
   .link {
     color: #6b6b6b;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
