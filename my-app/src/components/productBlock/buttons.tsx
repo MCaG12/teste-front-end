@@ -1,9 +1,5 @@
 import styles from "../../scss/productBlock/button.module.scss";
 
-type Props = {
-  onClick?: () => void;
-};
-
 interface PrevButtonProps {
   setSpliceStart: React.Dispatch<React.SetStateAction<number>>;
   setSpliceEnd: React.Dispatch<React.SetStateAction<number>>;
