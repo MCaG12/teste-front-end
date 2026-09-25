@@ -1,0 +1,79 @@
+.container {
+  background-color: #241B3A;
+  width: 100%;
+  padding: 56px 80px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1%;
+
+  .left-col {
+    width: 40%;
+  }
+
+  .title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    margin: 0 0 12px 0;
+  }
+
+  .subtitle {
+    color: #c9c3d9;
+    font-size: 17px;
+    font-family: Poppins, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 16px;
+  }
+
+  .input {
+    padding: 18px 22px;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+    font-family: Poppins, sans-serif;
+    width: 300px;
+    outline: none;
+  }
+
+  .checkout {
+    background-color: #F7CA11;
+    border: none;
+    border-radius: 8px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #1a1a3d;
+    padding: 18px 32px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .checkbox-label {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: #F7CA11;
+  }
+}

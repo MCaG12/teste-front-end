@@ -1,0 +1,17 @@
+.background {
+  display: flex;
+  width: 211px;
+  height: 211px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  .icon-image {
+    display: block;
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+  }
+}

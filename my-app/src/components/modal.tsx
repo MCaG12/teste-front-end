@@ -1,6 +1,20 @@
 import  { useState } from "react";
 
-export default function ProductModal({ onClose }) {
+interface i_product
+{
+  productName : string;
+  descriptionShort : string;
+  photo : string;
+  price : number;
+}
+
+interface i_ProductModal
+{
+  onClose: any;
+  product: i_product
+}
+
+export default function ProductModal({ onClose, product }: i_ProductModal) {
   const [quantity, setQuantity] = useState(1);
 
   const decrease = () => setQuantity((q) => Math.max(1, q - 1));
@@ -15,17 +29,14 @@ export default function ProductModal({ onClose }) {
 
         <div style={styles.content}>
           <div style={styles.imageCol}>
-            <img
-              alt="Produto"
-              style={styles.productImage}
-            />
+            <img src={product.photo} alt={product.productName}  />
           </div>
 
           <div style={styles.infoCol}>
-            <h2 style={styles.title}>LOREM IPSUM DOLOR SIT AMET</h2>
-            <p style={styles.price}>R$ 1.499,90</p>
+            <h2 style={styles.title}>{product.productName}</h2>
+            <p style={styles.price}>{product.price}R$</p>
             <p style={styles.description}>
-              Many desktop publishing packages and web page editors now many desktop publishing
+              {product.descriptionShort}
             </p>
             <a style={styles.detailsLink} href="#">
               Veja mais detalhes do produto &gt;
@@ -55,7 +66,7 @@ export default function ProductModal({ onClose }) {
 
 const styles = {
   overlay: {
-    position: "fixed",
+    position: "fixed" as const,
     top: 0,
     left: 0,
     width: "100%",
@@ -72,11 +83,11 @@ const styles = {
     width: "700px",
     maxWidth: "90%",
     padding: "40px",
-    position: "relative",
+    position: "relative" as const,
     boxShadow: "0 10px 40px rgba(0,0,0,0.2)",
   },
   closeBtn: {
-    position: "absolute",
+    position: "absolute" as const,
     top: "20px",
     right: "20px",
     background: "none",
@@ -99,7 +110,7 @@ const styles = {
   },
   infoCol: {
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column" as const,
     gap: "4px",
   },
   title: {
@@ -162,7 +173,7 @@ const styles = {
     color: "#1a1a1a",
     padding: "0 8px",
     minWidth: "20px",
-    textAlign: "center",
+    textAlign: "center" as const,
   },
   buyBtn: {
     backgroundColor: "#F7CA11",
