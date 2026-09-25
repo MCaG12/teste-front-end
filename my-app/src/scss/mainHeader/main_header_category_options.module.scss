@@ -1,0 +1,47 @@
+.navContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 16px 60px;
+  border-width: 2px 2px 0px 2px;
+  border-style: solid;
+  border-color: #d3d3d3;
+  box-sizing: border-box;
+
+  .navItem {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #979797;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .navItemHighlight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #4B3F9E;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .membershipWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .iconImage {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+}

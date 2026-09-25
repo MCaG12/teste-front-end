@@ -1,0 +1,64 @@
+.banner {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 1440 / 390;
+  background-image: url('../../assets/main-banner.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  position: relative;
+
+  &Content {
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+    width: 50%;
+  }
+
+  .checkout {
+    background-color: #F7CA11;
+    width: 40%;
+    border-radius: 10px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: #1a1a3d;
+    padding: 12px 24px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  .headline {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.15;
+    margin: 0 0 16px 0;
+    color: #ffffff;
+  }
+
+  .discountRow {
+    font-size: 22px;
+    margin: 0 0 24px 0;
+  }
+
+  .discountHighlight {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #F7CA11;
+    margin-right: 1%;
+  }
+
+  .discountText {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #ffffff;
+  }
+}
