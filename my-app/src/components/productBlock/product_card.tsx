@@ -1,10 +1,28 @@
-export default function ProductCard(
-  image: string,
-  productName: string,
-  price: number,
-) {
+import { useState } from "react";
+
+interface ProductCardProps {
+  image: string;
+  productName: string;
+  price: number;
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function ProductCard({
+  image,
+  productName,
+  price,
+  setShowModal,
+}: ProductCardProps) {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <div style={styles.card}>
+    <div
+      style={{
+        ...styles.card,
+        ...(isHovered ? { filter: 'brightness(0.9)' } : {}),
+      }}
+      onClick={() => setShowModal(true)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}>
       <div style={styles.imageBox}>
         <img src={image} alt={productName} style={styles.image} />
       </div>
@@ -25,13 +43,15 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     width: '366px',
-    height:'100%',
+    height: '100%',
     boxSizing: 'border-box',
     padding: '16px 16px 20px',
     backgroundColor: '#FFFFFF',
     borderRadius: '8px',
     boxShadow: '0 2px 12px rgba(0, 0, 0, 0.12)',
     fontFamily: 'Poppins, sans-serif',
+    cursor: 'pointer', 
+    transition: 'transform 0.2s ease, filter 0.2s ease',
   },
   imageBox: {
     display: 'flex',

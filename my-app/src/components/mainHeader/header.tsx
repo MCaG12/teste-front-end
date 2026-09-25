@@ -1,18 +1,30 @@
-import eConverse_icon from '.././assets/search_bar_icons/eConverse-icon.png'
-import cart_icon from '.././assets/search_bar_icons/cart-icon.png'
-import favorite_icon from '.././assets/search_bar_icons/favorite-icon.png'
-import return_icon from '.././assets/search_bar_icons/return-icon.png'
-import search_icon from '.././assets/search_bar_icons/search-icon.png'
-import user_icon from '.././assets/search_bar_icons/user-icon.png'
+import eConverse_icon from '../.././assets/search_bar_icons/eConverse-icon.png'
+import cart_icon from '../.././assets/search_bar_icons/cart-icon.png'
+import favorite_icon from '../.././assets/search_bar_icons/favorite-icon.png'
+import return_icon from '../.././assets/search_bar_icons/return-icon.png'
+import search_icon from '../.././assets/search_bar_icons/search-icon.png'
+import user_icon from '../.././assets/search_bar_icons/user-icon.png'
 
 export default function main_header() 
 {
     return(
     <div>
             <div style={styles.topBar}>
-                <span>Compra 100% segura</span>
-                <span>Frete grátis acima de R$ 500</span>
-                <span>Parcelas sem juros</span>
+
+                <div style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"5px"}}>
+                    <span>Compra</span>
+                    <span style={styles.highLightText}>100% segura</span>
+                </div>
+
+                <div style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"5px"}}>
+                    <span style={styles.highLightText}>Frete grátis</span>
+                    <span>acima de R$ 500</span>
+                </div>
+
+                <div style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"5px"}}>
+                    <span style={styles.highLightText}>Parcelas</span>
+                    <span>suas compras!</span>
+                </div>
             </div>
 
             <header style={styles.header}>
@@ -159,6 +171,13 @@ const styles = {
     width: 48,
     height: 48,
     objectFit: "contain",
+  },
+  highLightText: {
+    color: "#6141a7",
+    fontFamily: "Poppins, sans-serif",
+    fontWeight: "700",
+    fontSize: "12px",
+    margin: "0 0 2px 0",
   },
 } as const satisfies Record<string, React.CSSProperties>;
   

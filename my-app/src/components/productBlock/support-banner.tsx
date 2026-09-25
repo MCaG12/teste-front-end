@@ -1,4 +1,4 @@
-import banner from '.././assets/support-banner.png'
+import banner from '../.././assets/support-banner.png'
 export default function support_banner() 
 {
     return(

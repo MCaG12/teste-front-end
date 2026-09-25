@@ -1,10 +1,10 @@
-import tech_icon from '.././assets/shop_per_category_icons/tech.png'
-import supermercados_icon from '.././assets/shop_per_category_icons/supermercados.png'
-import whiskey_icon from '.././assets/shop_per_category_icons/whiskey.png'
-import ferramentas_icon from '.././assets/shop_per_category_icons/ferramentas.png'
-import corrida_icon from '.././assets/shop_per_category_icons/corrida.png'
-import moda_icon from '.././assets/shop_per_category_icons/moda.png'
-import saude_icon from '.././assets/shop_per_category_icons/cuidados-de-saude.png'
+import tech_icon from '../.././assets/shop_per_category_icons/tech.png'
+import supermercados_icon from '../.././assets/shop_per_category_icons/supermercados.png'
+import whiskey_icon from '../.././assets/shop_per_category_icons/whiskey.png'
+import ferramentas_icon from '../.././assets/shop_per_category_icons/ferramentas.png'
+import corrida_icon from '../.././assets/shop_per_category_icons/corrida.png'
+import moda_icon from '../.././assets/shop_per_category_icons/moda.png'
+import saude_icon from '../.././assets/shop_per_category_icons/cuidados-de-saude.png'
 
 export default function category_options() 
 {
