@@ -1,9 +1,9 @@
-export default function SectionTitle(ps_sectionName: string) {
+export default function SectionTitle(ps_sectionName: string, pb_drawLines: boolean) {
   return (
     <div style={styles.wrapper}>
-      <div style={styles.line} />
-      <h2 style={styles.title}>{ps_sectionName}</h2>
-      <div style={styles.line} />
+      {pb_drawLines && <div style={styles.line} />}
+      <h2 style={{...styles.title, ...( !pb_drawLines && { margin: "0 auto" }) }}>{ps_sectionName}</h2>
+      {pb_drawLines && <div style={styles.line} />}
     </div>
   );
 }
